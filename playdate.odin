@@ -13,9 +13,8 @@
 package playdate
 
 import "base:runtime"
-import "core:net"
 
-Api :: struct { 
+Api :: struct {
     system      : ^Api_System_Procs,
     file        : ^Api_File_Procs,
     graphics    : ^Api_Graphics_Procs,
@@ -25,6 +24,7 @@ Api :: struct {
     lua         : ^Api_Lua_Procs,
     json        : ^Api_Json_Procs,
     scoreboards : ^Api_Scoreboards_Procs,
+    network     : ^Api_Network_Procs,
 }
 
 
